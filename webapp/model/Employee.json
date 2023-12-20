@@ -1,0 +1,15 @@
+{ 
+    "Employees":{
+        "Employee":[
+            {
+                "name":"Akhtar",
+                "Department":"Consulting"
+            },
+            {
+                "name":"Arnab",
+                "Department":"Project Management"
+            }        
+        ]
+    }      
+
+    } 
