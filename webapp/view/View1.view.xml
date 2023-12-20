@@ -69,6 +69,19 @@
 
                                 </content>
                             </IconTabFilter>
+                            <IconTabFilter text="SAP Gateway Products" key="es5">
+                                <content>
+                                    <List headerText="{i18n>sapgatewayTitle}" items="{ES5>/ProductSet}">
+                                    <items>
+                                        <ObjectListItem
+                                            title="{ES5>tName}"
+                                            number="{ES5>ProductID}"
+                                            intro="{ES5>Price}" />
+                                    </items>
+					</List>
+
+                                </content>
+                            </IconTabFilter>
                         </items>
                     </IconTabBar>
                 </content>

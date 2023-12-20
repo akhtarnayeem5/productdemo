@@ -1,5 +1,3 @@
-# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
-
 specVersion: "3.1"
 metadata:
   name: btp.connectivity.productdemo
@@ -9,7 +7,7 @@ server:
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
-        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        ignoreCertError: false
         ui5:
           path:
             - /resources
@@ -19,6 +17,10 @@ server:
           - path: /V2
             url: https://services.odata.org
             destination: Northwind
+          - path: /sap/opu/odata/IWBEP/GWSAMPLE_BASIC/
+            url: https://sapes5.sapdevcenter.com/
+            client: "002"
+            destination: ES5
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -35,3 +37,12 @@ server:
             mockdataPath: ./webapp/localService/data
             generateMockData: true
         annotations: []
+        service:
+          - urlPath: /V2/Northwind/Northwind.svc
+            generateMockData: true
+            metadataXmlPath: ./webapp/localService/mainService/metadata.xml
+            mockdataRootPath: ./webapp/localService/data
+          - urlPath: /sap/opu/odata/IWBEP/GWSAMPLE_BASIC/
+            metadataXmlPath: ./webapp/localService/GWSAMPLE_BASIC/metadata.xml
+            mockdataRootPath: ./webapp/localService/GWSAMPLE_BASIC/mockdata
+            generateMockData: true

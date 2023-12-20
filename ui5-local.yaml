@@ -33,6 +33,10 @@ server:
           - path: /V2
             url: https://services.odata.org
             destination: Northwind
+          - path: /sap/opu/odata/IWBEP/GWSAMPLE_BASIC/
+            url: https://sapes5.sapdevcenter.com/
+            client: '002'
+            destination: ES5
     - name: sap-fe-mockserver
       beforeMiddleware: csp
       configuration:
