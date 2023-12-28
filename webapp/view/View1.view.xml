@@ -71,12 +71,12 @@
                             </IconTabFilter>
                             <IconTabFilter text="SAP Gateway Products" key="es5">
                                 <content>
-                                    <List headerText="{i18n>sapgatewayTitle}" items="{ES5>/ProductSet}">
+                                    <List headerText="{i18n>sapgatewayTitle}" items="{GWSAMPLE_BASIC>/ProductSet}">
                                     <items>
                                         <ObjectListItem
-                                            title="{ES5>tName}"
-                                            number="{ES5>ProductID}"
-                                            intro="{ES5>Price}" />
+                                            title="{GWSAMPLE_BASIC>Name}"
+                                            number="{GWSAMPLE_BASIC>Price}"
+                                            intro="{GWSAMPLE_BASIC>ProductID}" />
                                     </items>
 					</List>
 

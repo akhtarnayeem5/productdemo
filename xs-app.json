@@ -26,6 +26,13 @@
       "target": "$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/(.*)$",
+      "target": "/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/$1",
+      "destination": "ES5",
+      "authenticationType": "basic",
+      "csrfProtection": false      
     }
   ]
 }

@@ -25,7 +25,7 @@
                     "odataVersion": "2.0"
                 }
             },
-            "es5": {
+            "GWSAMPLE_BASIC": {
                 "uri": "/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/",
                 "type": "OData",
                 "settings": {
@@ -95,14 +95,7 @@
                 "dataSource": "mainService",
                 "preload": true,
                 "settings": {}
-            },
-            "ES5":{
-                "dataSource": "es5",
-                "settings": {
-                    "defaultBindingMode": "TwoWay"
-                }
-
-            },
+            },            
             "employee": {
                 "type": "sap.ui.model.json.JSONModel",
                 "uri": "model/Employee.json"
